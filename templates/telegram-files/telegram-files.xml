@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>Telegram Files</Name>
+    <Repository>ghcr.io/jarvis2f/telegram-files:latest</Repository>
+    <Registry>https://github.com/jarvis2f/telegram-files/pkgs/container/telegram-files</Registry>
+    <Network>bridge</Network>
+    <MyIP/>
+    <Shell>sh</Shell>
+    <Privileged>false</Privileged>
+    <Support>https://forums.unraid.net/topic/184315-support-jarvis2f-telegram-files</Support>
+    <Project>https://github.com/jarvis2f/telegram-files</Project>
+    <Overview>A simple telegram file downloader. &#xD;
+        https://github.com/jarvis2f/telegram-files&#xD;
+        It supports downloading files from Telegram channels and groups, multiple Telegram accounts for downloading, and
+        the ability to pause and resume downloads. &#xD;
+    </Overview>
+    <Category>Downloaders:</Category>
+    <WebUI>https://[IP]:[PORT:6543]/</WebUI>
+    <TemplateURL/>
+    <Icon>https://raw.githubusercontent.com/jarvis2f/telegram-files/refs/heads/main/web/public/favicon-96x96.png</Icon>
+    <ExtraParams/>
+    <PostArgs/>
+    <CPUset/>
+    <DateInstalled>1736256208</DateInstalled>
+    <DonateText/>
+    <DonateLink/>
+    <Requires/>
+    <Config Name="WEBUI Port" Target="80" Default="6543" Mode="tcp" Description="The port for the web interface." Type="Port" Display="always" Required="true" Mask="false">6543</Config>
+    <Config Name="APP ROOT" Target="APP_ROOT" Default="/app/data" Mode="" Description="The root directory for the application." Type="Variable" Display="always" Required="true" Mask="false">/app/data</Config>
+    <Config Name="TELEGRAM API ID" Target="TELEGRAM_API_ID" Default="" Mode="" Description="The API ID from https://my.telegram.org/apps" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="TELEGRAM API HASH" Target="TELEGRAM_API_HASH" Default="" Mode="" Description="The API Hash from https://my.telegram.org/apps" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="ROOT Directory" Target="/app/data" Default="" Mode="rw" Description="The root directory for the application. If you change this, you will need to update the APP_ROOT variable." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Changes>
+        ### 2025.01.07
+        - Initial Release
+    </Changes>
+</Container>
