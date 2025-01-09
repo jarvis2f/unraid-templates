@@ -15,7 +15,7 @@
         the ability to pause and resume downloads. &#xD;
     </Overview>
     <Category>Downloaders:</Category>
-    <WebUI>https://[IP]:[PORT:6543]/</WebUI>
+    <WebUI>https://[IP]:[PORT:80]/</WebUI>
     <TemplateURL/>
     <Icon>https://raw.githubusercontent.com/jarvis2f/telegram-files/refs/heads/main/web/public/favicon-96x96.png</Icon>
     <ExtraParams/>
